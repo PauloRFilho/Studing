@@ -1,0 +1,170 @@
+/* Como é possível fazer infinitas variações de formatação, para evitar a duplicidade de lançamento ferindo a
+ especificidade é importante fazer um planjamento de formatação antes de codificar */ 
+
+h1#titulo {
+	background-color: rgb(250, 180, 100); /*modo de definir cor: rgb é a mistura de 
+	cores (red, green, blue) ficou um laranja claro*/
+	color: white;
+}
+/* Seletor de elementos (ou de tipo, de tag) do tipo h1 */
+/* Em todos os h1 com este id titulo ficarão azul */
+
+#artigo a.destaque{
+	font-style: italic;
+}
+/* todos com o id artigo, independente da tag, irão receber esta formatação */
+/* colocar 2 ou mais ids e classes em conjunto é chamado de agrupamento */
+
+a.destaque{
+	color: darkred;
+	background-color: #ff 05 ab;
+}
+/* Aqui é um exemplo de uso de classe */
+/* pesquisei na internet, tanto faz usar o id ou class, ambos irão funcionar da mesma forma.
+Em um dos sites chegou a mencionar que é uma boa prática usar o class quando se for utilizar em
+vários elementos */ 
+/* no background formatei a cor de fundo utilizado hexadecimal. Os 2 primeiros caracteres são para red, 
+2 próximos para green e os 2 últimps para blue. Ali coloquei em pares com espaço entre eles mas não 
+é necessário. Pode ser tudo junto. Se aparecer somente com três caracteres (10A) é a forma abreviada*/
+
+#artigo strong{
+	font-style: italic;
+}
+/* seletores descendentes define que todos os elementos que estão dentro do elemento pai, avô ... receberão a
+propriedade definida. Nesse caso coloquei a propriedade strong que é neto de #artigo. Para colocar uma classe 
+descendente basta colocar o .nomeDaClasse descendente logo após o seletor. Ex: #artigo .classeTeste */
+
+/* Se desejar formatar somente os filhos diretos é preciso fazer conforme o exemplo a seguir:
+#artigo > .classeTeste
+*/
+
+/* é possível também misuturar tudo. Filhos diretos, descendentes, classes e seletores*/
+
+.nome{
+	color: #f00;
+	 
+	font-style: italic;
+	font-weight: bold; /*peso da fonte: normal ou bold */
+	font-size: 24px; /* por enquanto será em pixels */
+	font-family: "5555 Trebuchet MS", serif;
+
+	text-decoration: line-through;
+	text-decoration: underline;
+	/*   text-decoration: none;  */
+	text-align: center; /* left, right ou justify*/
+}
+/* se o nome da fonte tiver espaço deve-se colocar entre aspas duplas*/
+/* Ao colocar 2 fontes, caso o navegador não encontrar a primeira ele irá buscar a segunda*/
+/* coloquei alguns numeros na primeira para forçar a formatação na segunda.*/
+/* A dica é sempre terminar com uma fonte genérica. Serif é um nome genérico , sem pontas nas letras.*/
+
+.segmento{
+	font: oblique lighter 50px Palatino, sans-serif;
+} /* Também é possível colocar todos os atributos numa mesma linha através do font   */
+
+
+.nome-empresa .segmento-empresa .curso-html .curso-css .curso-java .curso-bootstrap {
+	font-size: 32px;
+}
+
+.nome-empresa{
+	background-color: pink;
+}
+
+.segmento-empresa{
+	background-color: red;
+}
+/*O display automático do a é inline e não é em bloco como os demais. Por isso eles aparecem um ao lado do outro */
+/*Para definir em bloco preciso definir como block */
+
+.curso-html{
+	background-color: #00dd00;
+}
+
+.curso-css{
+	background-color: #fdff11;
+}
+
+
+.nome-empresa .segmento-empresa{
+	display: block;
+	height: 100px;
+	width: 300px;
+}
+
+.curso-html .curso-css{
+	display: inline; /* não vai funcionar o height e width pois o display está inline*/
+	height: 100px;
+	width: 300px;
+}
+
+.curso-java{
+	font-size: 60px;
+	display: block
+	height: 100px;
+	width: 300px;
+
+	background-color: #00dddd;
+	border-width: thin;
+	border-color: red;
+	border-style: dashed;
+	border-radius: 10px; /* pontas arredondadas*/
+
+	text-align: center;
+
+	padding: 25px; /* espaçamento interno para que o texto não fique colado na borda da caixa*/
+
+	margin-left: 200px;
+	margin-top: 0px; /* por conta desta caixa a margem está zerada. Como o elemento de cima tem margem então
+	eles ainda não ficaram totalmente juntos*/
+	margin-bottom: 0px;
+
+	margin: 0 auto; /* colocando 0 e auto a caixa ficará centralizada na página */
+	/* como coloquei esta nova instrução margin após as anteriores a que vale é a última declarada */
+
+	box-sizing: content-box; /* content-box é o valor padrão */
+
+} 
+
+.curso-bootstrap{
+	font-size: 60px;
+	display: block
+	height: 100px;
+	width: 300px;
+
+	background-color: #ee00da;
+	border: thick blue solid;
+	border-bottom: 10px darkred dashed;
+	border-left: 10px greenyellow dotted;
+
+	padding: 5px;
+
+	margin-left: -8px; /* estes 8 pixes retirados juntam a caixa de texto na lateral do navegador. Colocar
+	0 não resolve. Estes 8 pixes são padrão do body. É comum sempre retirar esses 8px */
+	
+	box-sizing: border-box; /* border-box é mais fácil de usar do que o content-box*/
+	/* portanto para definir todos os elementos já com border-box lá no topo desse arquivo css basta colocar:
+
+			* {
+				box-sizing: border-box
+			}
+
+	O asterisco é um seletor que abrange todos os elementos da página.
+	se defino todas as caixas com widf 500px então ao colocar as bordas e padding eles não farão o tamanho 
+	da caixa aumentar desalinhando com as outras caixas da mesma página. O border-box subtrai do tamanho da
+	caixa o tamanho das bordas e paddings onde a somatória de todas dará os mesmos 500
+	 */
+}
+
+.Lista {
+	font-size: 40px;
+}
+
+.menu > li{
+	list-style: none; /* retira bolinhas*/
+	padding: 0;
+	margin: 0;
+	border: 3px solid red;
+	display: inline-block;
+	padding: 5px;
+}

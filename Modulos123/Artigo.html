@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+	<!-- Doctype: apenas para indicar ao navegador que o html será utilizado. Doctype não é uma tag html-->
+<html lang="pt-BR">
+	<!-- Nas pontas usa-se os simbolos de maior e menor para abrir e fechar a tag-->
+	<!-- Abrir elemento: html. Fechar elemento: /html com a barra na frente.-->
+	<head>
+		<!-- Head: titulo, informações não visuais-->
+		<meta charset="utf-8">
+			<!-- Os navegadores atuais conseguem ler os acentos e cedilha, mas é bom colocar UTF 8 para ajudar navergadores desatualizados a identificar qual a codificação utilizado na página. -->
+
+			<!-- fechar o elemento meta é errado. Basta colocar o simbolo de maoior no final para fechar a tag. Nem todo elemento precisa ser fechado.-->
+		<title>
+			Concentrem-se no Templo
+		</title> <!-- Title: Título na aba do navegador -->
+		<style> 
+			p {
+				color:green;
+			}
+			strong {
+				color:yellowgreen;
+				font-family: arial;
+			}
+		</style> <!-- A tag style é também uma introdução para as regras CSS de uma forma incorporada codificando dentro do html. Dessa forma não precisso reescrever a propriedade de cor a cada strong, por exemplo. Desvantagem: serve somente para este arquivo. Para isso que se cria um arquivo externo CSS -->
+		<link rel="stylesheet" href="Estilos.css"> <!-- Aqui se link o arquivo css com o código html sem precisar utilizar de forma incorporada como foi apresentado na tag style -->
+	</head>
+	<body>
+		<div><header><p>Blog de teste do Paulo<p></header></div> <!-- a tag div organiza o código. Não irá alterar nada no visual. Ele não traz a semântica necessária. Para isso há outros Separadores de conteúdo: Header, footer, main, aside, article e outros... -->
+		<img src="logoChurchNews.PNG" width="50" height="50" alt="logoChurchNews.PNG">
+		<!-- widf: largura. Height: altura. -->
+		<!-- Alt: para navegadores sem imagens, leitores para cegos e motores de busca. -->
+		<!-- PNG, JPG, SVG, GIF -->
+		<!-- É possível colocar em outros elementos também. Ex: dentro de p. -->
+		<!-- Esta imagem não está dentro de uma pasta, portanto basta colocar o seu nome e extenção. -->
+
+		<div id="artigo"> <!-- Como comentei antes o div não traz a semântica mas é possível usar o id. A partir daqui irei utilizar somente as tags com a semântica correta -->
+			<article>
+				<h1 id="titulo"><strong>Os céus foram abertos</strong> durante as cinco sessões da conferência.</h1>
+					<!-- Importante lembrar que o os Hs não são tamanho de fonte. Somente são para destacar o que é o mais importante. Em CSS será descrito a formatação. Os Hs começam em h1 até h6. Obecer esse conceito é importante para entender a semântica da codificação. -->
+
+				<h2><mark>“Oro</mark> para que tenham registrado suas impressões e ajam de acordo com elas.”</h2>
+					<!-- a tag mark serve para dar relevância conforme o contexto. No navegador irá mostrar marcado em amarelo. Ela poderá ser utilizada também para marcar as palavras de uma busca numa determinada página. -->
+
+				<p>“Nosso Pai Celestial e Seu Filho Amado, Jesus Cristo, estão prontos para ajudá-los. “Eu os exorto a aumentarem seus esforços para buscarem Sua ajuda.”
+					<!-- A tag p é usado como parágrafo. Testei e vi que o navegador interpretou o parágrafo sem colocar final do elemento /p. -->
+
+				<p style="color: blue;">Nunca percam de vista o que o Senhor está fazendo: Ele está tornando Seus templos mais acessíveis, Ele está acelerando o ritmo em que os templos são construídos, Ele está aumentando a capacidade de ajudarmos a coligar Israel. <!-- Dentro das tags é possível definir uma propriedade in line chamada style. Essa é somente uma demonstração inicial de CSS. Neste caso a formatação está sendo declarada dentro do próprio código html. Uma desvantagem é que sempre precisarei repetir este código em cada tag que for precisar novamente.-->
+
+				<p>“Que vocês se concentrem no <em>templo</em> como nunca fizeram antes. Eu os abençoo para que se aproximem de Deus e Jesus Cristo diariamente. Eu os amo.”
+					<!-- A tag em é para dar ênfase. No navegador irá mostrar em itálico. Cuidado para não usar sempre para formatar em itálico pois a semântica é a ênfase. -->
+			</article>
+		</div>
+		<footer>
+			<p>Para acessar o site da igreja <strong>clique no link</strong> a seguir:
+				<!-- A strong em é para dizer que aquela frase tem mais significado, é mais importante, dá um peso maior para a frase. No navegador irá mostrar em negrito. Cuidado para não usar sempre para formatar em negrito pois a semântica é para dar mais significado. -->
+			<br>
+			<br> <!-- a tag é para quebrar a linha. É importante evitar o uso indiscriminado do br. Em CSS será ambliado esse conhecimento.-->
+			<a class="destaque" href="https://www.churchofjesuschrist.org" target="_blank">www.churchofjesuschrist.org </a>
+				<!-- tag a para acessar um site -->
+				<!-- tag target para acessar um site abrindo em uma nova aba -->
+				<!-- para retirar o sublinhado será apresentado mais adiante -->
+			<br>
+			<br>
+			<a href="contato.html"> CONTATO </a>
+			<br>
+			<br>
+			<img src="https://deseret.brightspotcdn.com/9c/30/baa6eece4e689206be443a8ad7ad/symbol-christus.png" width=150 height="200" >
+			<br>
+			<a href="https://www.thechurchnews.com/">
+				<img src="imagens/Logo2.PNG" width="150" height="25" alt=logo2 >
+				<!-- Quando a imagem estiver em outra fonte é necessário colocar todo o endereço como demonstrado nos 2 exemplos acima. -->
+			</a> <!-- Para que uma imagem abra um link é preciso colocar a tag img dentro de a. -->	
+		</footer>
+		<div style="width: 500px; background-color: #d5dbe7;"> 
+			<!-- Atributos in line somente para testar-->
+			<!-- A cor #d5dbe7 foi encontrada através da inspeção de objeto do chrome -->
+			<p class="nome">Algaworks</p>	
+
+		</div>
+		<p class="segmento">Cursos On Line</p>
+		<br>
+		<br>
+		<a href="#" class="nome-empresa">AlgaW</a>
+		<a href="#" class="segmento-empresa">Cursos</a>
+
+		<p class="curso-html">HTML</p>
+		<p class="curso-css">CSS</p>
+		<p class="curso-java">JAVA</p>
+		<p class="curso-bootstrap">Bootstrap</p>
+
+		
+		<div class="Lista">
+			<ul> <!-- LISTA NÃO ORDENADA--> 
+				<li>HTML</li> <!-- li é list item-->
+				<li>CSS</li>
+				<li>JavaScript</li>
+			</ul>
+
+			<ol> <!-- LISTA ORDENADA--> 
+				<li>
+					Front-end
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</li>
+				<li>Back-end
+					<ul class="menu"> <!-- classe criada para retirar bolinhas, espaçamento esquerdo e outros --> 
+						<li><a href="#">Java EE</li>
+						<li>Spring Framework</li>
+						<li>Rest</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
