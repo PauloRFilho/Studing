@@ -1,5 +1,5 @@
 # AlgaWorks-1
-Código cometado ao longo das video aulas (level inicial)
+Código comentado ao longo das video aulas (level inicial)
 
 
 Este projeto foi criado enquanto fiz a primeira metade das video aulas de HTML 5 e CSS 3 fornecido pela AlgaWorks.
