@@ -1,0 +1,35 @@
+/*Aplicando BEM e organizando o código:*/
+
+/*
+* {
+  box-sizing: border-box;
+}
+*/
+
+/* o border-box foi excluído pois este normalizing já consta no bootstrap */
+
+
+/*---------------------------------------*/
+
+
+
+/*Exemplo de uso com Guidelines com os ajuste de medida "em" e "rem"*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* Posicionamento */
+
+  /* Display e Box Model */  
+  margin: 0;
+
+  /* Cores */
+
+  /* Texto */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem; /* antes era 14px */
+
+  /* Outros */
+}

@@ -1,0 +1,20 @@
+revisar cálculo de especificidade
+
+revisar forma de organizar css
+Revisar metodoligia BEM
+
+alert olá
+	para saber se um clique deu certo é bom fazer o teste com um alert
+aspas
+3 traços
+testar tipo de data (pode ser que o navegador do cliente não suporte html 5 que introduziu este tipo)
+achar paleta de cores e seus códigos html/css
+
+
+Estudar Front-End
+-> Bootstrap
+-> JavaScript
+-> jQuery
+-> Pré-processadores CSS
+
+
