@@ -1,0 +1,21 @@
+/*
+html{
+	font-size: 100%;
+}
+
+
+body {
+	font-size: 10px;
+} /* Ao inspecionar, no navegador, é possível constatar este tamanho. */
+
+.caixa{
+	width: 600px;
+	padding: 20px;
+	font-size: 12px; /*Dessa forma o usuário não conseguirá alterar o tamamhho da fonte de seu navegador. 
+	Ele pode colocar very large ou very small e não háverá alteração. 
+	Conclusão: Pixel deve ser evitado em layouts responsivos.*/
+
+
+	background-color: #ccc;
+	border: 5px solid black;
+}

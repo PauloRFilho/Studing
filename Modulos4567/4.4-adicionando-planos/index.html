@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Pilas</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"> <!-- Nesse caso ele irá resetar tudo. Se eu quiser formatar os dados do h1 daí farei a meu jeito-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- colocando após o reset o normalise está se sobrepondo. O normalize é um outro padrão que define as formatações independente do navegador usado. No código ou coloco reset ou coloco o normalize. Não é correto colocar os 2 como fiz aqui. -->
+	<!-- Sempre colocar estes padronizadores, reset ou normalize, na linha anterior ao estilos.css -->
+	<!-- Se deixar para fazer isso depois do projeto feito então haverá probabilidade de problemas. Estes padronizadores são a base do projeto, por isso deve vir antes do estilos.css-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<div class="containerIMG">
+			<img src="imagens/logo.png" width="100" height="35" alt="MyPilas">
+		</div>
+	</header>
+	<div id="planos">
+		<div class="container">
+			<article> <!-- class="plano" -->
+				<h2>Autônomo</h2>
+				<div>R$59,90/mês</div>
+				<ul>
+					<li>Até <strong>2 usuários</strong></li>
+					<li><strong>500MB</strong> de armazenamento</li>
+					<li>Lançamentos ilimitados</li>
+					<li>Acesso seguro</li>
+					<li>Sem fidelidade</li>
+				</ul>
+				<footer>
+					<a href="assine.html" class="botao">Assinar</a>
+				</footer>
+			</article>
+
+			<article> <!-- class="plano" -->
+				<h2>Micro</h2>
+				<div>R$89,90/mês</div>
+				<ul>
+					<li>Até <strong>6 usuários</strong></li>
+					<li><strong>1GB</strong> de armazenamento</li>
+					<li>Lançamentos ilimitados</li>
+					<li>Acesso seguro</li>
+					<li>Sem fidelidade</li>
+				</ul>
+				<footer>
+					<a href="assine.html" class="botao">Assinar</a>
+				</footer>
+			</article>
+
+			<article style="margin-right: 0"> <!-- class="plano" -->
+				<h2>Pequena</h2>
+				<div>R$99,90/mês</div>
+				<ul>
+					<li>Até <strong>10 usuários</strong></li>
+					<li><strong>5GB</strong> de armazenamento</li>
+					<li>Lançamentos ilimitados</li>
+					<li>Acesso seguro</li>
+					<li>Sem fidelidade</li>
+				</ul>
+				<footer>
+					<a href="assine.html" class="botao">Assinar</a>
+				</footer>
+			</article>
+		</div>
+	</div>
+	<script>
+		document.write("<h1>" + window.innerWidth + "x" + window.innerHeight + "</h1>");	
+	</script> <!-- código em javascript mostra na tela a resolução do navegador -->
+
+</body>
+</html>

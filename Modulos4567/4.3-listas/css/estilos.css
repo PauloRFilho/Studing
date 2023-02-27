@@ -1,0 +1,15 @@
+body {
+	font-size: 32px;
+}
+
+.menu {
+	list-style: none; /* sem a bolinha da lista*/
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu > li {
+	display: inline-block; /* se quiser quiser tirar o espaço entre os blocos tem que juntar o codigo lá no html*/
+	border: 3px solid red;
+	padding: 5px;
+}

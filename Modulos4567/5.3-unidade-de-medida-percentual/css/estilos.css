@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	/*font-size: 10%; /* todas as porcentagens abaixo irão se basear nestes 10% */
+	font-size: 62,5%; /* definir o tamanho padrão de 10% (10 ÷ 16 x 100 = 62,5) */
+}
+
+.caixa{
+	
+	width: 50%;
+	padding: 10%; 
+	margin-top: 10%; /* ao redimencionar o tamanho do navegador a margem irá diminuir. Isto ocorre pois
+	a margem será 10% do tamanho do navegador ou do meio em que está inserido e não do tamanho da fonte. 
+	Se ele estiver inserido numa caixa ele será 10% do tamanho da caixa. O mesmo ocorre com o padding, width, ... */
+	font-size: 200%;
+	border: 5px solid black; /* o elemento border não reconheceu o tamanho em porcentagem 3,125% */
+	background-color: #ccc;
+	
+
+
+}
+
+
+/*
+p{
+	font-size: 200%; /*relativo ao pai. Se não tivesse o .caixa seria 2 x 16px. Como 
+	o .caixa dobrou então será 4 x 16px*/
+}
+
+p{
+	font-size: 187,5%; /* Caso o programador queira definir o tamanho para 30px, para manter o modo responsivo,
+	não se deve setar os 30px direto no código. Numa calculadora: 30 ÷ 16pixels (padrão dos navegadores) x 100  = 187,5  */
+}
+
+
+

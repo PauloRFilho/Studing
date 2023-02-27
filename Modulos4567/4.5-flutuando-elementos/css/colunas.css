@@ -1,0 +1,35 @@
+body {
+	font-size: 32px;
+}
+
+h1 {
+	margin: 0;
+}
+
+article {
+	background-color: #0f0; /*o verde vai até o final do 2º texto. O cinza do texto ficará sobreposto ao verde*/
+}/*esseção: se colocar float no texto daí o verde não irá enxergar mais todo o texto ficando somente no
+que não for float*/
+
+footer {
+	background-color: yellow;
+	text-align: center;
+}
+
+.coluna1, .coluna2 {
+	background-color: #ccc;
+}
+
+.coluna1 {
+  float: left;
+  width: 48%;
+}
+
+.coluna2 {
+  float: right;
+  width: 48%;
+}
+
+.clearfix {
+  clear: both; /*limpa o float dali pra baixo. Por isso o verde prosseguiu após os 2 blocos cinza*/
+}

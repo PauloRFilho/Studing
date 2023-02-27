@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+header {
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+header img {
+	margin-top: 12 px;
+}
+
+.container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+#planos {
+	padding: 80px 0;
+}
+
+#planos::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+article	{
+	padding: 10px;
+	border: 1px solid #95a4a5;
+	
+}
+
+/* media query */
+@media (min-width: 550px ) { /* entre o tamanho da menor tela até a largura de 550px aplicar os parâmetros abaixo */
+	article{
+		width: 30%;
+		float: 	left; /* Todas as caixas de preço ficam "empilhados" lateralmente por serem todas left.*/
+		margin-right:5%; /* 30 + 30 + 30 + 5 + 5*/
+	}
+}
+
+article > h2 {
+	background-color: #95a4a5;
+	color: #fff;
+	text-align: center;
+	line-height: 2.5; /* 2,5x o tamanho da fonte quero de que o texto fique centralizado em cima e em baixo*/
+	margin: -10px; /* ficou negativo pois o article tem um padding de 10px coloquei 10px*/
+	margin-bottom: 0; /*foi necessário pois o texto 500mb acabou sobrepondo o título por causa do negativo da linha de cima */
+	font-weight: normal; /* pois não é negrito*/
+	font-size: 28px;
+}
+
+article > div {
+	text-align: center;
+	font-size: 28px;
+	margin: 20px 0; /*superior e inferior 20, esquerda e direta como 0 */
+}
+
+article ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+}
+
+article > ul > li {
+	text-align: center;
+}
+
+article > footer {
+	text-align: center;
+}
+
+.botao {
+	display: inline-block;
+	background-color: #127d00;
+	color: #fff;
+	padding: 12px 16px;
+	text-decoration: none;
+}
+
+/* quando usa somente 1 : é uma pseudo classe. Com 2 :: é um pseudo elemento como demonstrado acima em Planos */
+.botao:hover, .botao:focus { /* hover: alteração de cor quando passa o mouse sobre o botão. Focus: altera quando está em foco */
+	background-color: red; /*#0e6100 verde mais escuro (fica mais charmoso. Vou deixar o red para chamar a atenção*/
+}
+

@@ -1,0 +1,43 @@
+body{
+	font-size: 32px;
+}
+
+h1{
+	color: red;
+}
+
+#logo{
+	color: green;
+}
+
+.amarelo {
+	color: yellow;
+}
+
+h1{
+	color: blue; /* o que vai valer é o azul e não o vermelho, mas como há o conceito de especificidade,
+	quando temos um seletor de uma classe ela acaba sendo mais específico e mesmo pedindo pra ser azul
+	em baixo, o que ganharia do vermelho, não ganhará da especificação da classe amarelo. Quando os seletores
+	iguais aí sim ganha quem vem por último. */
+
+	/* Em comparação com o id logo a classe amarelo perde pois acaba sendo ainda mais específico. Não se pode
+	ter mais do que 1 id logo no código, ou seja, é ainda mais específico.*/
+}
+
+
+/*
+Sequência por peso:
+
+ID		atribuir 1 ou 0
+Classe  atribuir 1 ou 0
+Tag		atribuir 1 ou 0
+
+Exemplo:
+
+#logo 		100
+.amarelo 	010
+h1 			001
+
+Se tivesse 2 tags por exemplo: h1 div então será 002
+se tivesse #id #id novaClasse: 210
+*/

@@ -1,0 +1,68 @@
+<!-- getbootstrap.com baixar o que preciso do bootstrap. 
+https://getbootstrap.com/docs/3.4/customize/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title></title>
+</head>
+<body>
+	<!--<div class="container">
+		AlgaWorks
+	</div>
+		<p>	</p>
+	-->
+
+	<div class="container-fluid">
+		<div class="row"> 	<!-- agrupador de colunas -->
+			
+			<div class="col-xs-12 col-sm-3"> <!-- Após consultar a documentação do bootstrap e usando a ideia do mobile first: quando for usar uma tela muito pequena, xs, usar 12 colunas -->
+				<div style="background-color: green; color:#fff">
+					<h1>Logo</h1>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-3"> <!-- a barra branca entre eles é o butter 15 + 15, um padding entre eles-->
+				<!-- Ao errar colocando somente 3 colunas ao invés de 9 para que o logo e o menu ocupem as 12 colunas e ao aumentar a tela do navegador o banner 1 irá subir. Isso é um erro causado ao colocar apenas 1 row para todos os elementos. O sistema irá interpretar como todos os elementos estando na mesma linha. Por isso que na sequencia coloquei 1 row por grupos de elementos: logo e menu, banners e por fim o rodapé -->
+				<div style="background-color: blue; color:#fff">
+					<h1>Menu</h1>
+				</div>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div style="background-color: darkblue	; color:#fff">
+					<h1>Banner 1</h1>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div style="background-color: orange; color:#fff">
+					<h1>Banner 2</h1>
+				</div>
+			</div>
+				
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<div style="background-color: red; color:#fff">
+					<h1>Banner 3</h1>
+				</div>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="col-xs-12">
+				<div style="background-color: black	; color:#fff">
+					<h1>Rodapé</h1>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

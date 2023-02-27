@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+header {
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+
+header img	{
+	margin-top: 12px; /* tentando centralizar em cima e em baixo. 
+	Para isso desconta os 60 do header com os 35 heigh do tamanho da imagem = 25. 25 / 2 é igual a 12,5. */
+}
+
+.container {
+	width: 1200px; /* E se o monitor da pessoa for maior ou menor do que 1200px? Ainda não
+	estou estudando métodos responsivos */
+	/*background-color: yellow;*/  /*o amarelo foi usado somente para visualizar os 1200px*/ 
+	margin: 0 auto; /* centralizado */
+	padding-left: 15px;
+	padding-right: ;: 15px
+}
