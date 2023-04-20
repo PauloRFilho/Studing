@@ -1,1 +1,2 @@
-Projetos realizados durante estudos e práticas junto a AlgaWorks
+Projetos realizados durante estudos junto a AlgaWorks
+Também contém códigos profissionais aplicados para empresas
